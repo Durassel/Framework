@@ -1,0 +1,22 @@
+{
+    "name": "frederic/framework",
+    "authors": [
+        {
+            "name": "Frederic Rosso",
+            "email": "frederic.rosso@efrei.net"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"Framework\\": "src/Framework"
+    	}
+    },
+    "require": {
+        "guzzlehttp/psr7": "^1.4",
+        "phpunit/phpunit": "^6.3",
+        "http-interop/response-sender": "^1.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "require-dev": {
+    }
+}
