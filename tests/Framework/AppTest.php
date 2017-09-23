@@ -25,7 +25,7 @@ class AppTest extends TestCase
     {
         $app = new App([
             BlogModule::class
-        ], []);
+        ]);
         $request = new ServerRequest('GET', '/blog');
         $response = $app->run($request);$this->assertContains('<h1>Bienvenue sur le blog</h1>', (string)$response->getBody());
         $this->assertEquals(200, $response->getStatusCode());
